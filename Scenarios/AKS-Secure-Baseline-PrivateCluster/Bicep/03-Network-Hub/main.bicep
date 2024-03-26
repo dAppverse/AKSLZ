@@ -80,7 +80,7 @@ resource subnetfwmanagement 'Microsoft.Network/virtualNetworks/subnets@2020-11-0
   scope: resourceGroup(rg.name)
   name: '${vnethub.name}/AzureFirewallManagementSubnet'
 }
-
+/*
 module azfirewall 'modules/vnet/firewall.bicep' = {
   scope: resourceGroup(rg.name)
   name: azfwName
@@ -180,7 +180,7 @@ module telemetry 'modules/telemetry/telemetry.bicep' = {
     enableTelemetry: true
   }
 }
-
+*/
 // @description('Enable usage and telemetry feedback to Microsoft.')
 // param enableTelemetry bool = true
 // var telemetryId = '0d807b2d-f7c3-4710-9a65-e88257df1ea0-${location}'
